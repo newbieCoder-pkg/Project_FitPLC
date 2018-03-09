@@ -29,6 +29,12 @@ export class ChartjsPieComponent implements OnDestroy {
       this.options = {
         maintainAspectRatio: false,
         responsive: true,
+        scale: {
+          pointLabels: {
+            fontSize: 14,
+            fontColor: chartjs.textColor,
+          },
+        },
         scales: {
           xAxes: [
             {

@@ -11,8 +11,8 @@ const routes: Routes = [{
     path: 'dashboard',
     component: DashboardComponent,
   }, {
-    path: 'ui-features',
-    loadChildren: './ui-features/ui-features.module#UiFeaturesModule',
+    path: 'treinos',
+    loadChildren: './treinos/treinos.module#TreinosModule',
   }, {
     path: 'components',
     loadChildren: './components/components.module#ComponentsModule',

@@ -25,7 +25,7 @@ export class EchartsRadarComponent implements AfterViewInit, OnDestroy {
         color: [colors.danger, colors.warning],
         tooltip: {},
         legend: {
-          data: ['Allocated Budget', 'Actual Spending'],
+          data: ['Início', 'Atual'],
           textStyle: {
             color: echarts.textColor,
           },
@@ -37,12 +37,12 @@ export class EchartsRadarComponent implements AfterViewInit, OnDestroy {
             },
           },
           indicator: [
-            { name: 'Sales', max: 6500 },
-            { name: 'Administration', max: 16000 },
-            { name: 'Information Techology', max: 30000 },
-            { name: 'Customer Support', max: 38000 },
-            { name: 'Development', max: 52000 },
-            { name: 'Marketing', max: 25000 },
+            { name: 'Força', max: 6500 },
+            { name: 'Resistência', max: 16000 },
+            { name: 'Mobilidade', max: 30000 },
+            { name: 'Experiência', max: 38000 },
+            { name: 'Coordenação', max: 52000 },
+            { name: 'Respiração', max: 25000 },
           ],
           splitArea: {
             areaStyle: {
@@ -52,16 +52,16 @@ export class EchartsRadarComponent implements AfterViewInit, OnDestroy {
         },
         series: [
           {
-            name: 'Budget vs Spending',
+            name: 'Início vs Atual',
             type: 'radar',
             data: [
               {
                 value: [4300, 10000, 28000, 35000, 50000, 19000],
-                name: 'Allocated Budget',
+                name: 'Início',
               },
               {
                 value: [5000, 14000, 28000, 31000, 42000, 21000],
-                name: 'Actual Spending',
+                name: 'Atual',
               },
             ],
           },

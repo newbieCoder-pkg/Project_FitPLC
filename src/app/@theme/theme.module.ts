@@ -15,11 +15,7 @@ import {
   NbThemeModule,
   NbUserModule,
   NbCheckboxModule,
-  NbPopoverModule,
-  NbContextMenuModule,
 } from '@nebular/theme';
-
-import { NbSecurityModule } from '@nebular/security';
 
 import {
   FooterComponent,
@@ -52,10 +48,7 @@ const NB_MODULES = [
   NbSearchModule,
   NbSidebarModule,
   NbCheckboxModule,
-  NbPopoverModule,
-  NbContextMenuModule,
   NgbModule,
-  NbSecurityModule, // *nbIsGranted directive
 ];
 
 const COMPONENTS = [
@@ -81,7 +74,7 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'default',
     },
     [ DEFAULT_THEME, COSMIC_THEME ],
   ).providers,

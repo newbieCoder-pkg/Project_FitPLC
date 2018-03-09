@@ -30,7 +30,7 @@ export class EchartsMultipleXaxisComponent implements AfterViewInit, OnDestroy {
           },
         },
         legend: {
-          data: ['2015 Precipitation', '2016 Precipitation'],
+          data: ['Peso 2017', 'Peso 2018'],
           textStyle: {
             color: echarts.textColor,
           },
@@ -60,24 +60,24 @@ export class EchartsMultipleXaxisComponent implements AfterViewInit, OnDestroy {
               label: {
                 formatter: params => {
                   return (
-                    'Precipitation  ' + params.value + (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+                    'Peso 2018  ' + params.value + (params.seriesData.length ? '：' + params.seriesData[0].data : '')
                   );
                 },
               },
             },
             data: [
-              '2016-1',
-              '2016-2',
-              '2016-3',
-              '2016-4',
-              '2016-5',
-              '2016-6',
-              '2016-7',
-              '2016-8',
-              '2016-9',
-              '2016-10',
-              '2016-11',
-              '2016-12',
+              '2018-1',
+              '2018-2',
+              '2018-3',
+              '2018-4',
+              '2018-5',
+              '2018-6',
+              '2018-7',
+              '2018-8',
+              '2018-9',
+              '2018-10',
+              '2018-11',
+              '2018-12',
             ],
           },
           {
@@ -100,24 +100,24 @@ export class EchartsMultipleXaxisComponent implements AfterViewInit, OnDestroy {
               label: {
                 formatter: params => {
                   return (
-                    'Precipitation  ' + params.value + (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+                    'Peso 2017  ' + params.value + (params.seriesData.length ? '：' + params.seriesData[0].data : '')
                   );
                 },
               },
             },
             data: [
-              '2015-1',
-              '2015-2',
-              '2015-3',
-              '2015-4',
-              '2015-5',
-              '2015-6',
-              '2015-7',
-              '2015-8',
-              '2015-9',
-              '2015-10',
-              '2015-11',
-              '2015-12',
+              '2017-1',
+              '2017-2',
+              '2017-3',
+              '2017-4',
+              '2017-5',
+              '2017-6',
+              '2017-7',
+              '2017-8',
+              '2017-9',
+              '2017-10',
+              '2017-11',
+              '2017-12',
             ],
           },
         ],
@@ -143,17 +143,17 @@ export class EchartsMultipleXaxisComponent implements AfterViewInit, OnDestroy {
         ],
         series: [
           {
-            name: '2015 Precipitation',
+            name: 'Peso 2017',
             type: 'line',
             xAxisIndex: 1,
             smooth: true,
-            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            data: [50.6, 52.9, 55.0, 54.4, 52.7, 53.7, 55.6, 57.2, 58.7, 61.8, 59.0, 58.3],
           },
           {
-            name: '2016 Precipitation',
+            name: 'Peso 2018',
             type: 'line',
             smooth: true,
-            data: [3.9, 5.9, 11.1, 18.7, 48.3, 69.2, 231.6, 46.6, 55.4, 18.4, 10.3, 0.7],
+            data: [59.9,],
           },
         ],
       };

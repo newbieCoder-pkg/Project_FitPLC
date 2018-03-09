@@ -12,112 +12,71 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
-    title: 'UI Features',
+    title: 'Treinos',
     icon: 'nb-keypad',
-    link: '/pages/ui-features',
+    link: '/pages/treinos',
     children: [
       {
-        title: 'Buttons',
-        link: '/pages/ui-features/buttons',
+        title: 'Meus Treinos',
+        link: '/pages/treinos/library',
       },
       {
-        title: 'Grid',
-        link: '/pages/ui-features/grid',
+        title: 'FAQ',
+        link: '/pages/treinos/tabs',
       },
       {
-        title: 'Icons',
-        link: '/pages/ui-features/icons',
-      },
-      {
-        title: 'Modals',
-        link: '/pages/ui-features/modals',
-      },
-      {
-        title: 'Popovers',
-        link: '/pages/ui-features/popovers',
-      },
-      {
-        title: 'Typography',
-        link: '/pages/ui-features/typography',
-      },
-      {
-        title: 'Animated Searches',
-        link: '/pages/ui-features/search-fields',
-      },
-      {
-        title: 'Tabs',
-        link: '/pages/ui-features/tabs',
+        title: 'Suporte',
+        link: '/pages/components/tree',
       },
     ],
   },
+    {
+    title: 'Assistente de Treino',
+    icon: 'nb-bar-chart',
+    children: [
+      {
+        title: 'Estatísticas de Treino',
+        link: '/pages/charts/echarts',
+      },
+      {
+        title: 'Diário de Treino',
+        link: '/pages/charts/chartjs',
+      },
+
+    ],
+  },
   {
-    title: 'Forms',
+    title: 'Blog',
     icon: 'nb-compose',
     children: [
       {
-        title: 'Form Inputs',
+        title: 'Standart',
         link: '/pages/forms/inputs',
       },
       {
-        title: 'Form Layouts',
+        title: 'Conteúdo Premium',
         link: '/pages/forms/layouts',
       },
     ],
   },
   {
-    title: 'Components',
+    title: 'Definições',
     icon: 'nb-gear',
     children: [
       {
-        title: 'Tree',
-        link: '/pages/components/tree',
+        title: 'Perfil',
       }, {
-        title: 'Notifications',
+        title: 'Definições de Conta',
         link: '/pages/components/notifications',
       },
     ],
   },
   {
-    title: 'Maps',
+    title: 'Suporte',
     icon: 'nb-location',
-    children: [
-      {
-        title: 'Google Maps',
-        link: '/pages/maps/gmaps',
-      },
-      {
-        title: 'Leaflet Maps',
-        link: '/pages/maps/leaflet',
-      },
-      {
-        title: 'Bubble Maps',
-        link: '/pages/maps/bubble',
-      },
-      {
-        title: 'Search Maps',
-        link: '/pages/maps/searchmap',
-      },
-    ],
+      link: '/pages/editors/tinymce',
   },
-  {
-    title: 'Charts',
-    icon: 'nb-bar-chart',
-    children: [
-      {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
-      },
-      {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
-      },
-      {
-        title: 'D3',
-        link: '/pages/charts/d3',
-      },
-    ],
-  },
-  {
+  /*{
     title: 'Editors',
     icon: 'nb-title',
     children: [
@@ -162,5 +121,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/auth/reset-password',
       },
     ],
-  },
+  },*/
 ];

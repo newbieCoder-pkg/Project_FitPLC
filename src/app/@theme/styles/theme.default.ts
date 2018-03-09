@@ -5,16 +5,16 @@ export const DEFAULT_THEME = {
 
     // Safari fix
     temperature: [
-      '#42db7d',
-      '#42db7d',
-      '#42db7d',
-      '#42db7d',
-      '#42db7d',
+      '#00beff',
+      '#00beff',
+      '#00beff',
+      '#00beff',
+      '#00beff',
     ],
 
     solar: {
-      gradientLeft: '#42db7d',
-      gradientRight: '#42db7d',
+      gradientLeft: '#00beff',
+      gradientRight: '#007aff',
       shadowColor: 'rgba(0, 0, 0, 0)',
       radius: ['80%', '90%'],
     },
@@ -31,7 +31,7 @@ export const DEFAULT_THEME = {
       lineShadowBlur: '1',
       itemColor: '#bcc3cc',
       itemBorderColor: '#bcc3cc',
-      itemEmphasisBorderColor: '#42db7d',
+      itemEmphasisBorderColor: '#00beff',
       shadowLineDarkBg: 'rgba(0, 0, 0, 0)',
       shadowLineShadow: 'rgba(0, 0, 0, 0)',
       gradFrom: '#ebeef2',
@@ -51,11 +51,11 @@ export const DEFAULT_THEME = {
       xAxisTextColor: '#2a2a2a',
       yAxisSplitLine: '#ebeef2',
 
-      itemBorderColor: '#42db7d',
+      itemBorderColor: '#00beff',
       lineStyle: 'solid',
       lineWidth: '4',
-      lineGradFrom: '#42db7d',
-      lineGradTo: '#42db7d',
+      lineGradFrom: '#00beff',
+      lineGradTo: '#00beff',
       lineShadow: 'rgba(0, 0, 0, 0)',
 
       areaGradFrom: 'rgba(235, 238, 242, 0.5)',
